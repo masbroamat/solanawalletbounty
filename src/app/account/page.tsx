@@ -3,8 +3,6 @@
 import "../../../public/css/account.css";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useRouter } from "next/navigation";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { FaEye, FaEyeSlash, FaCopy } from "react-icons/fa";
@@ -13,7 +11,6 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 
 export default function AccountPage() {
-  const router = useRouter();
   const [isVisible, setIsVisible] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [isPublicKeyVisible, setIsPublicKeyVisible] = useState(false);

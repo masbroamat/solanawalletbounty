@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
-  const [airdropIsHovered, setAirdropIsHovered] = useState(false);
   const [isPublicKeyVisible, setIsPublicKeyVisible] = useState(false);
   const [isBalanceVisible, setIsBalanceVisible] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
@@ -25,19 +24,6 @@ export default function Home() {
     cursor: "pointer",
     transition: "all 0.3s ease-in-out",
   };
-
-  // const airdropButtonStyle = {
-  //   backgroundColor: airdropIsHovered ? "transparent" : "#ab9ff2",
-  //   padding: "15px 25px",
-  //   color: airdropIsHovered ? "#ab9ff2" : "white", 
-  //   borderRadius: "10px",
-  //   fontSize: "24px",
-  //   border: `1px solid ${airdropIsHovered ? "#ab9ff2" : "#ab9ff2"}`,
-  //   cursor: "pointer",
-  //   transition: "all 0.3s ease-in-out",
-  //   width: "100%",
-  //   height: "255px",
-  // };
 
   const { connection } = useConnection();
   const { publicKey } = useWallet();
@@ -202,8 +188,6 @@ export default function Home() {
               </motion.div>
               <motion.div
                 className="airdropbuttondiv"
-                onMouseEnter={() => setAirdropIsHovered(true)}
-                onMouseLeave={() => setAirdropIsHovered(false)}
                 variants={itemVariants}
               >
                 <motion.button

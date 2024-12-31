@@ -2,10 +2,7 @@
 
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
-import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
-import Intro from "@/components/Intro";
 import AppWalletProvider from "@/components/AppWalletProvider";
 import { useEffect } from "react";
 

@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { MiniChart } from "react-ts-tradingview-widgets";
 import "../../../public/css/price.css";
 
-export default function solusd() {
+export default function Usdtusd() {
   const [chartWidth, setChartWidth] = useState("330%");
-    const [chartHeight, setChartHeight] = useState("60%");
+  const [chartHeight, setChartHeight] = useState("60%");
   
     useEffect(() => {
       const handleResize = () => {
