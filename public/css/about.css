@@ -1,0 +1,218 @@
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+body{
+    overflow: hidden;
+}
+.aboutmain {
+    display: flex;
+    height: 90vh; 
+    width: 70%; 
+    padding-top: 130px;
+    margin: auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+.aboutcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+    width: 40%; 
+}
+
+.container1 {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 35%;
+    flex-direction: column-reverse;  
+    height: fit-content;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%; 
+}
+
+.authorcontainer {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 340px;  
+
+}
+
+.authorcontainer img {
+    width: 40px;
+    height: 40px; 
+}
+
+.authorcontainer .icons ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.authorcontainer .icons ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authorcontainer .icons ul li:hover {
+    cursor: pointer;
+    color: #1ec1bb;
+}
+
+.about,
+.container2,
+.authorcontainer {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.about:hover > h1,
+.container2:hover > h1,
+.authorcontainer:hover > h1 {
+    transform: translateY(-3px);
+    color: #1ec1bb;
+    transition: all 0.3s ease-in-out;
+}
+ 
+.aboutmain,
+.aboutcontent,
+.container1,
+.container2,
+.authorcontainer,
+.about {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+h1{
+    font-size: 3rem;
+}
+ 
+@media (max-width: 1298px) {
+    .aboutmain {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 500px;
+        width: 70%;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .aboutcontent {
+        width: 100%;
+        height: fit-content;
+        gap: 50px;
+    }
+
+    .container1 {
+        width: 100%;
+        height: fit-content;
+        gap: 80px;
+    }
+}   
+
+@media (max-width: 1200px) {
+    .aboutmain {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 700px;
+        width: 70%;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .aboutcontent {
+        width: 100%;
+        height: fit-content;
+        gap: 50px;
+    }
+
+    .container1 {
+        width: 100%;
+        height: fit-content;
+        gap: 80px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+}   
+
+@media (max-width: 640px) {
+    .aboutmain {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 750px;
+        width: 70%;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    .aboutcontent {
+        width: 100%;
+        height: fit-content;
+        gap: 50px;
+    }
+
+    .container1 {
+        width: 100%;
+        height: fit-content;
+        gap: 80px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+}   
+@media (max-width: 340px) {
+    .aboutmain {
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 800px;
+        width: 70%;
+        justify-content: center;
+        overflow: auto; 
+        margin-top: 100px;
+    }
+
+    .aboutcontent {
+        width: 100%;
+        height: fit-content;
+        gap: 50px;
+    }
+
+    .container1 {
+        width: 100%;
+        height: fit-content;
+        gap: 80px;
+        overflow: visible;
+    }
+
+    .authorcontainer {
+        height: 500px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+}   

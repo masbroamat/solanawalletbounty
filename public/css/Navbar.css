@@ -1,0 +1,161 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.2); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 8;
+  height: fit-content;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-image {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.navbar-logo-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li {
+  font-size: 1rem;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #24b0b7;
+}
+
+.navbar-links a.active {
+  color: #ebffff;
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+}
+
+.signout-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.signout-button:hover {
+  color: #00aaff;
+}
+
+.signout-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5f1ec1;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 2.1s ease-in-out;
+  font-weight: 500;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+} 
+ 
+/* Ensure the navbar links are displayed properly */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links.hidden {
+  display: none;
+}
+
+.navbar-links.open {
+  display: flex;
+}
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-logo{
+    
+    justify-content: space-between;
+    width: 100%;
+  }
+  .motiondivmain{
+    padding-top: 200px;
+    gap: 0px;
+    width: 80vw;
+  }
+  main div h1.title{
+    font-size: 2rem;
+  }
+  main div p.subtitle{
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+}
+
+.motiondivmain{
+  padding-top: 150px;
+  gap: 0px;
+  width: 80vw;
+}

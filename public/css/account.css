@@ -1,0 +1,23 @@
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@media (max-width: 613px) {
+  h2 {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+  .subtitle{
+    font-size: 14px;
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+    .topheader{
+        flex-direction: column;
+        gap: 15px;
+    }
+}

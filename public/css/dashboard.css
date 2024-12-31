@@ -1,0 +1,352 @@
+.dashboard-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.dashboardmain {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.header {
+  display: flex;
+  width: 80vw;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 20vh;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.buttondiv {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.address {
+  width: 80vw;
+  height: 70vh;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: #141414;
+  border-radius: 20px;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notconnect {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.addresscontent {
+  display: flex;
+  font-size: 27px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 40px;
+  justify-content: start;
+  align-items: end;
+}
+
+.infodiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.publickey h2,
+.balance h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.publickey,
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0px;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  width: 48%;
+  height: 20vh;
+  padding: 35px 40px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-input {
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 16px;
+  color: inherit;
+  outline: none;
+  width: 100%;
+}
+
+.input-with-icon {
+  display: flex;
+  width: 100%;
+}
+
+.headerkey {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.airdropbuttondiv {
+  display: flex;
+  width: 50%;
+  margin: 40px auto;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) { 
+  .dashboardmain { 
+    overflow: auto;
+  }
+
+  .airdropbuttondiv {
+    display: flex;
+    width: 100%;  
+    margin-top: 80px;
+  }
+
+  .airdropbuttondiv .airdrop-button{
+    display: flex;
+    width: 100%; 
+    height: 350%;
+    font-size: 20px;
+    padding: 10px 30px; 
+  }
+}
+@media screen and (max-width: 972px) {
+  h1{
+    font-size: 30px;
+  }
+  .dashboardmain { 
+    overflow: auto;
+  }
+
+  .address {
+    width: 90vw;
+    height: 70vh;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: #141414;
+    border-radius: 20px;
+    padding:20px 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .publickey,
+  .balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0px;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    width: 100%;
+    height: 20vh;
+    padding: 35px 40px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 0.8px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .infodiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .header {
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 20vh;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .buttondiv {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addresscontent {
+    display: flex;
+    font-size: 27px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 40px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .airdropbuttondiv {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;  
+  }
+
+  .airdropbuttondiv .airdrop-button{
+    display: flex;
+    width: 100%; 
+    height: fit-content;
+  font-size: 20px;
+  padding: 10px 30px; 
+  }
+
+  .notconnect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .publickey,
+  .balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 0px;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    width: 100%;
+    height: 20vh;
+    padding: 25px 25px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: 0.8px solid rgba(255, 255, 255, 0.1);
+  }
+  .notconnect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+}
+
+@media screen and (max-width: 360px)
+{
+  .header{
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.airdropbuttondiv {
+  display: flex;
+  width: 100%;  
+}
+
+.airdropbuttondiv .airdropbutton{
+  display: flex;   
+  padding: "15px 25px";
+  width: "100%";
+  height: "255px";
+
+}
+
+.airdrop-button {
+  background-color: #ab9ff2;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 10px;
+  font-size: 24px;
+  border: 1px solid #ab9ff2;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 255px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.airdrop-button.hovered {
+  background-color: transparent;
+  color: #ab9ff2;
+  border: 1px solid #ab9ff2;
+}

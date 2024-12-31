@@ -1,0 +1,59 @@
+ 
+
+.signout-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5f1ec1;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInOut 3.2s ease-in-out;
+  font-weight: 500;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.formdiv{
+  margin-left: 300px;
+}
+
+@media (max-width: 943px) {
+  .formdiv{
+    margin-left: 150px;
+  }
+}
+@media (max-width: 640px) {
+  .formdiv{
+    scale: 0.9;
+    margin-left: 10px;
+  }
+}
+
+.formdivsignup{
+  margin-right: 300px;
+}
+
+@media (max-width: 943px) {
+  .formdivsignup{
+    margin-right: 150px;
+  }
+}
+@media (max-width: 640px) {
+  .formdivsignup{
+    scale: 0.9;
+    margin-right: 10px;
+  }
+}

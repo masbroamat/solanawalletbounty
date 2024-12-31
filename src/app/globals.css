@@ -2,20 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+  background-color: #1A1A1D;
+  max-height: 100vh;
+} 
+
+main{
+  color: aliceblue;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+main div h1.title{
+  font-size: 70px;
+  font-weight: 600;
+}
+
+main div p.subtitle{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 6.5px;
+}
+
+.connect-wallet{
+  background-color: #7952ed;
+  color: aliceblue;
+  border: 1px solid #8043e0;
+  border-radius: 5px;
+  padding: 10px 20px; 
+  font-weight: 500;
+  cursor: pointer;  
+}
+
+.connect-wallet:hover{
+  background-color: #8043e0; 
+
+}
+
+.connect-wallet:hover img {
+  transform: translateY(-3px);
+  transition: transform 0.3s ease;
+}
+
+.connect-wallet img {
+  transform: translateY(0px);
+  transition: transform 0.3s ease;
+}
+
+.signin-message {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5f1ec1;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: globalfade 3.2s ease-in-out;
+  font-weight: 500;
+}
+
+@keyframes globalfade {
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  10%,
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

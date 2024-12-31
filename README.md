@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Solana Wallet Dashboard
+
+Solana Wallet Dashboard is a decentralized application (dApp) built with Next.js that integrates Solana Web3 functionalities and provides seamless connectivity with Phantom Wallet. The application offers real-time price charts, wallet balance display, and a responsive, user-friendly design.
+
+## Features
+
+- **Phantom Wallet Integration**: Securely connect and disconnect your wallet.
+- **Real-Time Price Charts**: View historical SOL/USD and USDT/USD price data using TradingView Widgets.
+- **Responsive Design**: Optimized for desktop and mobile devices.
+- **Animations**: Smooth UI interactions powered by Framer Motion.
+- **User-Friendly Interface**: Modern and intuitive design.
+
+## Technologies Used
+
+- **Next.js**: Framework for building server-rendered React applications.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Shadcn/ui**: Modern UI components for rapid development.
+- **Framer Motion**: Library for animations and transitions.
+- **TradingView Widgets**: Real-time financial charting.
+- **Solana Wallet Integration**: Solana Web3 using Phantom Wallet.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Node.js >= 14
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd solanawallet
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open http://localhost:3000 to view the application.
+
+## File Structure
+
+```
+├───public
+│   ├───css
+│   └───js
+├───src
+│   ├───app
+│   │   ├───about
+│   │   │   └───page.tsx
+│   │   ├───account
+│   │   │   └───page.tsx
+│   │   ├───dashboard
+│   │   │   └───page.tsx
+│   │   ├───price
+│   │   │   └───page.tsx
+│   │   ├───signin
+│   │   │   └───page.tsx
+│   │   ├───signup
+│   │   │   └───page.tsx
+│   ├───components
+│   │   ├───price
+│   │   │   ├───Solusd.tsx
+│   │   │   └───Usdtusd.tsx
+│   │   └───ui
+│   │       ├───AppWalletProvider.tsx
+│   │       ├───form.tsx
+│   │       ├───Intro.tsx
+│   │       ├───Navbar.tsx
+│   │       └───submit-button.tsx
+│   ├───hooks
+│   └───lib
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Development**: `npm run dev` - Starts the development server.
+* **Build**: `npm run build` - Creates an optimized production build.
+* **Start**: `npm start` - Runs the production build.
+* **Lint**: `npm run lint` - Runs ESLint checks.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+### Deploy on Vercel
 
-To learn more about Next.js, take a look at the following resources:
+1. Install the Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Deploy the application:
+   ```bash
+   vercel deploy
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Demo Video and Documentation
 
-## Deploy on Vercel
+A demo video showcasing the functionalities and detailed project documentation can be found here.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contribution
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Contributions are welcome! Follow these steps:
+
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your commit message"
+   ```
+
+4. Push to your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Submit a pull request.
+
+## Contact
+
+* **GitHub**: masbroamat
+* **LinkedIn**: Syazwan Yacob
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
