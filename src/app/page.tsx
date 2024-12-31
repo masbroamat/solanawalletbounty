@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import Intro from "@/components/Intro";
+import Image from 'next/image';
 
 export default function Home() {
   const router = useRouter();
@@ -76,9 +77,11 @@ export default function Home() {
               className="mt-5 connect-wallet w-full sm:w-auto"
               onClick={handleSignIn}
             >
-              <img
+              <Image
                 src="/phantomlogo.png"
                 alt="Phantom-Logo"
+                width={24}
+                height={24}
                 className="object-cover w-6 h-6 mr-2"
                 draggable="false"
               />

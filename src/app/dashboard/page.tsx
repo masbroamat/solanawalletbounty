@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import { FaEye, FaEyeSlash, FaCopy } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -55,7 +56,7 @@ export default function Home() {
       if (sigResult) {
         alert("Airdrop was confirmed!");
       }
-    } catch (err) {
+    } catch {
       alert("You are Rate limited for Airdrop");
     }
   };
@@ -97,10 +98,12 @@ export default function Home() {
       animate="visible"
       variants={containerVariants}
     >
-      <img
+      <Image
         src="/solanavault.png"
         alt="Background"
         className="background-image"
+        layout="fill"
+        objectFit="cover"
         draggable="false"
       />
 

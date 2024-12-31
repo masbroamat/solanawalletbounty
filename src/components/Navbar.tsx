@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import "../../public/css/Navbar.css";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const pathname = usePathname();
@@ -66,9 +67,11 @@ const Navbar: React.FC = () => {
             href="/"
             className="navbar-logo-name flex justify-center items-center"
           >
-            <img
+            <Image
               src="/solana3d1.png"
               alt="Logo"
+              width={40}
+              height={40}
               className="navbar-logo-image"
               draggable="false"
             />
