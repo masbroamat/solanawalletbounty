@@ -30,7 +30,7 @@ Solana Wallet Dashboard is a decentralized application (dApp) built with Next.js
 
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/masbroamat/solanawalletbounty.git
    cd solanawallet
    ```
 
@@ -45,40 +45,6 @@ Solana Wallet Dashboard is a decentralized application (dApp) built with Next.js
    ```
 
 4. Open http://localhost:3000 to view the application.
-
-## File Structure
-
-```
-├───public
-│   ├───css
-│   └───js
-├───src
-│   ├───app
-│   │   ├───about
-│   │   │   └───page.tsx
-│   │   ├───account
-│   │   │   └───page.tsx
-│   │   ├───dashboard
-│   │   │   └───page.tsx
-│   │   ├───price
-│   │   │   └───page.tsx
-│   │   ├───signin
-│   │   │   └───page.tsx
-│   │   ├───signup
-│   │   │   └───page.tsx
-│   ├───components
-│   │   ├───price
-│   │   │   ├───Solusd.tsx
-│   │   │   └───Usdtusd.tsx
-│   │   └───ui
-│   │       ├───AppWalletProvider.tsx
-│   │       ├───form.tsx
-│   │       ├───Intro.tsx
-│   │       ├───Navbar.tsx
-│   │       └───submit-button.tsx
-│   ├───hooks
-│   └───lib
-```
 
 ## Scripts
 
@@ -103,7 +69,8 @@ Solana Wallet Dashboard is a decentralized application (dApp) built with Next.js
 
 ## Demo Video and Documentation
 
-A demo video showcasing the functionalities and detailed project documentation can be found here.
+- [Watch Demo Video](https://youtube.com/your-video-link)
+- [Documentation](https://docs.google.com/document/d/1nWMpmbAOZThqJWHMxAmzslKoa-JRIhXkJ9mDSDTGS60/edit?usp=sharing)
 
 ## Contribution
 
@@ -129,9 +96,14 @@ Contributions are welcome! Follow these steps:
 
 ## Contact
 
-* **GitHub**: masbroamat
-* **LinkedIn**: Syazwan Yacob
+* **GitHub**: [masbroamat](https://github.com/masbroamat)
+* **LinkedIn**: [Syazwan Yacob](https://linkedin.com/in/syazwan-yacob)
 
-## License
+## Related Resources
+- [Solana Docs][solana]
+- [Phantom Wallet][phantom]
+- [Next.js Documentation][nextjs]
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+[solana]: https://docs.solana.com
+[phantom]: https://phantom.app
+[nextjs]: https://nextjs.org/docs

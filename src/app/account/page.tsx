@@ -92,7 +92,7 @@ export default function AccountPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 p-4 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 p-4 divmain">
       <motion.div
         className="container mx-auto max-w-2xl pt-12"
         initial="hidden"
@@ -100,7 +100,7 @@ export default function AccountPage() {
         variants={containerVariants}
       >
         <motion.div 
-          className="relative backdrop-blur-xl bg-white/5 rounded-2xl border border-white/10 shadow-2xl overflow-hidden mt-8"
+          className="relative backdrop-blur-xl bg-white/5 rounded-2xl border border-white/10 shadow-2xl   mt-8"
           variants={itemVariants}
         >
           {/* Header with Wallet Button */}

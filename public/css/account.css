@@ -13,11 +13,29 @@ h2 {
     font-size: 14px;
     line-height: 1.5rem;
   }
+
+  .container{
+    overflow-y: auto;
+  }
+
+  .divmain{
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 500px) {
     .topheader{
         flex-direction: column;
-        gap: 15px;
+        gap: 15px; 
+    }
+
+    .container{
+      overflow-y: auto;
+    }
+
+    .divmain{
+      flex-direction: column;
+      gap: 15px;
     }
 }

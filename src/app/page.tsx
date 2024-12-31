@@ -18,7 +18,7 @@ export default function Home() {
       const timer = setTimeout(() => {
         setIsVisible(true);
         localStorage.setItem('animationPlayed', 'true');
-      }, 9500);
+      }, 0);
 
       return () => clearTimeout(timer);
     } else {
