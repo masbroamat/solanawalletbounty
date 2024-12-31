@@ -69,7 +69,7 @@ Solana Wallet Dashboard is a decentralized application (dApp) built with Next.js
 
 ## Demo Video and Documentation
 
-- [Watch Demo Video](https://youtube.com/your-video-link)
+- [Watch Demo Video](https://youtu.be/tR3VzdgKiK8)
 - [Documentation](https://docs.google.com/document/d/1nWMpmbAOZThqJWHMxAmzslKoa-JRIhXkJ9mDSDTGS60/edit?usp=sharing)
 
 ## Contribution
